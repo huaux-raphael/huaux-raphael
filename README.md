@@ -32,7 +32,12 @@
 
 ###
 
-<p align="center">Student developer focused on software engineering, cybersecurity, machine learning and more. Currently building personal and collaborative projects.</p>
+<p align="center">Student developer focused on software engineering, cybersecurity, machine learning, and interactive systems. Currently building personal and collaborative projects while continuously learning and experimenting with new technologies.<br><br>## Interests<br>Cybersecurity • Software Architecture • Game Systems • Machine Learning <br>Technology Startups • Full-Stack Development • Creative Technology<br><br>## Tech Stack<br>
+### Languages<br>JavaScript • TypeScript • Java • Kotlin • Python • C++ • Dart • Lua<br><br>
+### Web & Frameworks<br>React • Node.js • Flutter • HTML • CSS<br><br>
+### Tools & Software<br>Git & GitHub • VS Code • IntelliJ IDEA • Android Studio • Gradle • Figma • Blender • Unity • Unreal Engine • PyTorch<br><br>
+### Systems & Platforms<br>Linux (Debian, Ubuntu, Arch) • Windows 11 • Arduino • Raspberry Pi<br><br>
+### Browsers<br>Edge • Firefox • Chrome • Opera • Opera GX</p>
 
 ###
 
@@ -52,6 +57,8 @@
 </div>
 
 ###
+
+<br clear="both">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/huaux-raphael/huaux-raphael/pacman-output/pacman-contribution-graph-dark.svg">
