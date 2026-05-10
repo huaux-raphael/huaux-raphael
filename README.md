@@ -32,7 +32,7 @@
 
 ###
 
-<p align="center">Student developer focused on software engineering, cybersecurity, machine learning, and interactive systems. Currently building personal and collaborative projects while continuously learning and experimenting with new technologies.<br><br>## Interests<br>Cybersecurity • Software Architecture • Game Systems • Machine Learning <br>Technology Startups • Full-Stack Development • Creative Technology<br><br>## Tech Stack<br>
+<p align="center">Student developer focused on software engineering, cybersecurity, machine learning, and interactive systems. Currently building personal and collaborative projects while continuously learning and experimenting with new technologies.<br><br>----------------------------------------------------------------------------------------<br><br>## Interests<br>Cybersecurity • Software Architecture • Game Systems • Machine Learning <br>Technology Startups • Full-Stack Development • Creative Technology<br><br>## Tech Stack<br>
 ### Languages<br>JavaScript • TypeScript • Java • Kotlin • Python • C++ • Dart • Lua<br><br>
 ### Web & Frameworks<br>React • Node.js • Flutter • HTML • CSS<br><br>
 ### Tools & Software<br>Git & GitHub • VS Code • IntelliJ IDEA • Android Studio • Gradle • Figma • Blender • Unity • Unreal Engine • PyTorch<br><br>
