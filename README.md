@@ -53,8 +53,6 @@
 
 ###
 
-<br clear="both">
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/huaux-raphael/huaux-raphael/pacman-output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/huaux-raphael/huaux-raphael/pacman-output/pacman-contribution-graph.svg">
