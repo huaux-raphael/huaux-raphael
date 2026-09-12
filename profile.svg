@@ -74,7 +74,7 @@
     }
 </style>
 
-<rect class="bg" width="760" height="825" />
+<rect class="bg" width="760" height="850" />
 
 <rect class="topbar" width="760" height="38" />
 <line class="border" x1="0" y1="38" x2="760" y2="38" />
@@ -92,7 +92,7 @@
     <tspan class="breadcrumb-dim"> › ...</tspan>
 </text>
 
-<line class="border" x1="52" y1="38" x2="52" y2="825" />
+<line class="border" x1="52" y1="38" x2="52" y2="850" />
 
 <text class="line-number" x="41" y="66">1</text>
 <text class="text" x="68" y="66">huaux-raphael</text>
