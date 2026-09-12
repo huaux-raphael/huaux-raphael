@@ -1,8 +1,8 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="760"
-    height="850"
-    viewBox="0 0 760 850"
+    width="620"
+    height="860"
+    viewBox="0 0 620 860"
 >
 
 <style>
@@ -74,10 +74,10 @@
     }
 </style>
 
-<rect class="bg" width="760" height="850" />
+<rect class="bg" width="620" height="860" />
 
-<rect class="topbar" width="760" height="38" />
-<line class="border" x1="0" y1="38" x2="760" y2="38" />
+<rect class="topbar" width="620" height="38" />
+<line class="border" x1="0" y1="38" x2="620" y2="38" />
 
 <text class="breadcrumb" x="12" y="25">
     C:
@@ -92,7 +92,7 @@
     <tspan class="breadcrumb-dim"> › ...</tspan>
 </text>
 
-<line class="border" x1="52" y1="38" x2="52" y2="850" />
+<line class="border" x1="52" y1="38" x2="52" y2="860" />
 
 <text class="line-number" x="41" y="66">1</text>
 <text class="text" x="68" y="66">huaux-raphael</text>
