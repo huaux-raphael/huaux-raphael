@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="./profile.svg" width="75%" alt="Huaux Raphaël VS Code Profile">
+  <img src="./profile.svg" width="50%" alt="Huaux Raphaël VS Code Profile">
 </p>
