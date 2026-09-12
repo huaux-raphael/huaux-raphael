@@ -1,85 +1,186 @@
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="620"
-    height="860"
-    viewBox="0 0 620 860"
->
-
-<style>
-    .bg {
-        fill: #181818;
+<svg xmlns="http://www.w3.org/2000/svg" width="828" height="833" viewBox="0 0 828 833">
+  <style>
+    text {
+      font-family: "Cascadia Code", "Cascadia Mono", Consolas, "Courier New", monospace;
+      dominant-baseline: alphabetic;
     }
 
-    .topbar {
-        fill: #181818;
+    .bg { fill: #111111; }
+    .activity { fill: #181818; }
+    .explorer { fill: #181818; }
+    .editor { fill: #111111; }
+    .tabbar { fill: #111111; }
+    .tab { fill: #181818; }
+    .selected-activity { fill: #2a2d2e; }
+    .border { stroke: #2b2b2b; stroke-width: 1; }
+    .divider { stroke: #303030; stroke-width: 1; }
+
+    .activity-icon {
+      fill: none;
+      stroke: #9a9a9a;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
-    .border {
-        stroke: #2b2b2b;
-        stroke-width: 1;
+    .explorer-title {
+      fill: #d4d4d4;
+      font-size: 14px;
+      font-weight: 700;
     }
 
-    .line-number {
-        fill: #858585;
-        font-size: 16px;
-        text-anchor: end;
+    .tree {
+      fill: #d4d4d4;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .tree-dim {
+      fill: #b7b7b7;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .tree-blue {
+      fill: #4fc1ff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .tab-text {
+      fill: #f0f0f0;
+      font-size: 14px;
+      font-weight: 700;
+      font-style: italic;
     }
 
     .breadcrumb {
-        fill: #cccccc;
-        font-size: 15px;
+      fill: #b8b8b8;
+      font-size: 13px;
+      font-weight: 600;
     }
 
     .breadcrumb-dim {
-        fill: #858585;
+      fill: #7c7c7c;
     }
 
-    .text {
-        fill: #d4d4d4;
-        font-size: 16px;
+    .line-no {
+      fill: #858585;
+      font-size: 14px;
+      text-anchor: end;
+      font-weight: 500;
+    }
+
+    .plain {
+      fill: #d4d4d4;
+      font-size: 14px;
+      font-weight: 600;
     }
 
     .label {
-        fill: #dcdcaa;
-        font-size: 16px;
+      fill: #dcdcaa;
+      font-size: 14px;
+      font-weight: 700;
     }
 
     .section {
-        fill: #ce9178;
-        font-size: 16px;
+      fill: #ce9178;
+      font-size: 14px;
+      font-weight: 700;
     }
 
     .value {
-        fill: #9cdcfe;
-        font-size: 16px;
+      fill: #4fc1ff;
+      font-size: 14px;
+      font-weight: 700;
     }
 
-    .reference {
-        fill: #569cd6;
-        font-size: 16px;
+    .ref {
+      fill: #569cd6;
+      font-size: 14px;
+      font-weight: 700;
     }
 
-    .separator {
-        stroke: #a0a0a0;
-        stroke-width: 1;
+    .rule {
+      stroke: #888888;
+      stroke-width: 1;
     }
+  </style>
 
-    text {
-        font-family:
-            "Cascadia Code",
-            "Cascadia Mono",
-            Consolas,
-            "Courier New",
-            monospace;
-    }
-</style>
+  <!-- Whole window -->
+  <rect class="bg" x="0" y="0" width="828" height="833"/>
 
-<rect class="bg" width="620" height="860" />
+  <!-- Activity bar -->
+  <rect class="activity" x="0" y="0" width="52" height="833"/>
+  <rect class="selected-activity" x="6" y="5" width="36" height="41" rx="4"/>
 
-<rect class="topbar" width="620" height="38" />
-<line class="border" x1="0" y1="38" x2="620" y2="38" />
+  <!-- Explorer icon -->
+  <rect class="activity-icon" x="11" y="12" width="18" height="23" rx="2"/>
+  <path class="activity-icon" d="M15 9h15l5 5v19"/>
 
-<text class="breadcrumb" x="12" y="25">
+  <!-- Search -->
+  <circle class="activity-icon" cx="22" cy="77" r="9"/>
+  <line class="activity-icon" x1="29" y1="84" x2="37" y2="92"/>
+
+  <!-- Source control -->
+  <circle class="activity-icon" cx="18" cy="119" r="3"/>
+  <circle class="activity-icon" cx="31" cy="132" r="3"/>
+  <circle class="activity-icon" cx="18" cy="145" r="3"/>
+  <line class="activity-icon" x1="18" y1="122" x2="18" y2="142"/>
+  <path class="activity-icon" d="M21 119c10 0 10 7 10 10"/>
+
+  <!-- Run -->
+  <path class="activity-icon" d="M14 169l20 12-20 12z"/>
+
+  <!-- Extensions -->
+  <rect class="activity-icon" x="10" y="211" width="10" height="10"/>
+  <rect class="activity-icon" x="24" y="211" width="10" height="10"/>
+  <rect class="activity-icon" x="10" y="225" width="10" height="10"/>
+  <rect class="activity-icon" x="24" y="225" width="10" height="10"/>
+
+  <!-- Explorer panel -->
+  <rect class="explorer" x="52" y="0" width="193" height="833"/>
+  <line class="divider" x1="245" y1="0" x2="245" y2="833"/>
+
+  <text class="explorer-title" x="68" y="28">Explorer</text>
+  <text class="explorer-title" x="214" y="28">...</text>
+
+  <!-- Profile root -->
+  <text class="tree-dim" x="67" y="62">⌄</text>
+  <text class="tree" x="88" y="62">Profile</text>
+
+  <!-- Folders all closed -->
+  <text class="tree-dim" x="80" y="94">›</text>
+  <text class="tree" x="96" y="94">Folder1</text>
+
+  <text class="tree-dim" x="80" y="125">›</text>
+  <text class="tree" x="96" y="125">Folder2</text>
+
+  <text class="tree-dim" x="80" y="156">›</text>
+  <text class="tree" x="96" y="156">Folder3</text>
+
+  <text class="tree-dim" x="80" y="187">›</text>
+  <text class="tree" x="96" y="187">Folder4</text>
+
+  <!-- README entry -->
+  <circle cx="81" cy="217" r="7" fill="none" stroke="#4fc1ff" stroke-width="1.4"/>
+  <text class="tree-blue" x="78.2" y="221" font-size="10">i</text>
+  <text class="tree" x="95" y="222">README.md</text>
+
+  <!-- Editor -->
+  <rect class="editor" x="245" y="0" width="583" height="833"/>
+
+  <!-- Tab -->
+  <rect class="tab" x="245" y="0" width="159" height="36"/>
+  <line x1="245" y1="0" x2="404" y2="0" stroke="#007acc" stroke-width="2"/>
+  <circle cx="263" cy="18" r="6" fill="none" stroke="#4fc1ff" stroke-width="1.3"/>
+  <text x="260.5" y="21.3" fill="#4fc1ff" font-size="9">i</text>
+  <text class="tab-text" x="279" y="24">README.md</text>
+  <text x="379" y="24" fill="#d4d4d4" font-size="20">×</text>
+  <line class="border" x1="245" y1="36" x2="828" y2="36"/>
+
+  <!-- Breadcrumb -->
+  <text class="breadcrumb" x="266" y="60">
     C:
     <tspan class="breadcrumb-dim"> › </tspan>
     Users
@@ -90,202 +191,174 @@
     <tspan class="breadcrumb-dim"> › </tspan>
     README.md
     <tspan class="breadcrumb-dim"> › ...</tspan>
-</text>
+  </text>
+  <line class="border" x1="245" y1="72" x2="828" y2="72"/>
 
-<line class="border" x1="52" y1="38" x2="52" y2="860" />
+  <!-- Gutter -->
+  <line class="border" x1="304" y1="72" x2="304" y2="833"/>
 
-<text class="line-number" x="41" y="66">1</text>
-<text class="text" x="68" y="66">huaux-raphael</text>
-<line class="separator" x1="205" y1="60" x2="600" y2="60" />
+  <!-- Content -->
+  <!-- line positions: y=99 then +23 -->
+  <text class="line-no" x="293" y="99">1</text>
+  <text class="plain" x="320" y="99">huaux-raphael</text>
+  <line class="rule" x1="445" y1="93" x2="814" y2="93"/>
 
-<text class="line-number" x="41" y="91">2</text>
-<text class="text" x="68" y="91">· </text>
-<text class="label" x="86" y="91">Role:</text>
-<text class="text" x="140" y="91">...............................</text>
-<text class="value" x="440" y="91">Student Developer</text>
+  <text class="line-no" x="293" y="122">2</text>
+  <text class="plain" x="320" y="122">· </text>
+  <text class="label" x="337" y="122">Role:</text>
+  <text class="plain" x="382" y="122">..............................</text>
+  <text class="value" x="664" y="122">Student Developer</text>
 
-<text class="line-number" x="41" y="116">3</text>
-<text class="text" x="68" y="116">· </text>
-<text class="label" x="86" y="116">Location:</text>
-<text class="text" x="173" y="116">.....................................</text>
-<text class="value" x="532" y="116">Belgium</text>
+  <text class="line-no" x="293" y="145">3</text>
+  <text class="plain" x="320" y="145">· </text>
+  <text class="label" x="337" y="145">Location:</text>
+  <text class="plain" x="414" y="145">............................</text>
+  <text class="value" x="748" y="145">Belgium</text>
 
-<text class="line-number" x="41" y="141">4</text>
-<text class="text" x="68" y="141">· </text>
-<text class="label" x="86" y="141">Hobbies:</text>
-<text class="text" x="164" y="141">............</text>
-<text class="value" x="289" y="141">Gaming, Anime, Learning, Building</text>
+  <text class="line-no" x="293" y="168">4</text>
+  <text class="plain" x="320" y="168">· </text>
+  <text class="label" x="337" y="168">Hobbies:</text>
+  <text class="plain" x="405" y="168">...........</text>
+  <text class="value" x="519" y="168">Gaming, Anime, Learning, Building</text>
 
-<text class="line-number" x="41" y="166">5</text>
-<text class="text" x="68" y="166">· </text>
-<text class="label" x="86" y="166">Interests:</text>
-<text class="text" x="183" y="166">.........</text>
-<text class="value" x="282" y="166">Software, Hardware, Cybersecurity,</text>
+  <text class="line-no" x="293" y="191">5</text>
+  <text class="plain" x="320" y="191">· </text>
+  <text class="label" x="337" y="191">Interests:</text>
+  <text class="plain" x="424" y="191">........</text>
+  <text class="value" x="518" y="191">Software, Hardware, Cybersecurity,</text>
 
-<text class="line-number" x="41" y="191">6</text>
-<text class="text" x="68" y="191">............................</text>
-<text class="value" x="336" y="191">Networking, Machine Learning</text>
+  <text class="line-no" x="293" y="214">6</text>
+  <text class="plain" x="320" y="214">...........................</text>
+  <text class="value" x="565" y="214">Networking, Machine Learning</text>
 
-<text class="line-number" x="41" y="216">7</text>
+  <text class="line-no" x="293" y="237">7</text>
 
-<text class="line-number" x="41" y="241">8</text>
-<text class="section" x="68" y="241">- Tools</text>
-<line class="separator" x1="142" y1="235" x2="600" y2="235" />
+  <text class="line-no" x="293" y="260">8</text>
+  <text class="section" x="320" y="260">- Tools</text>
+  <line class="rule" x1="390" y1="254" x2="814" y2="254"/>
 
-<text class="line-number" x="41" y="266">9</text>
-<text class="text" x="68" y="266">· </text>
-<text class="label" x="86" y="266">OS:</text>
-<text class="text" x="122" y="266">.................................</text>
-<text class="value" x="442" y="266">Linux, Windows 11</text>
+  <text class="line-no" x="293" y="283">9</text>
+  <text class="plain" x="320" y="283">· </text>
+  <text class="label" x="337" y="283">OS:</text>
+  <text class="plain" x="365" y="283">................................</text>
+  <text class="value" x="665" y="283">Linux, Windows 11</text>
 
-<text class="line-number" x="41" y="291">10</text>
-<text class="text" x="68" y="291">· </text>
-<text class="label" x="86" y="291">IDE:</text>
-<text class="text" x="131" y="291">...........</text>
-<text class="value" x="245" y="291">VS Code, IntelliJ IDEA, Android Studio</text>
+  <text class="line-no" x="293" y="306">10</text>
+  <text class="plain" x="320" y="306">· </text>
+  <text class="label" x="337" y="306">IDE:</text>
+  <text class="plain" x="373" y="306">...........</text>
+  <text class="value" x="484" y="306">VS Code, IntelliJ IDEA, Android Studio</text>
 
-<text class="line-number" x="41" y="316">11</text>
-<text class="text" x="68" y="316">· </text>
-<text class="label" x="86" y="316">Tools:</text>
-<text class="text" x="149" y="316">............</text>
-<text class="value" x="272" y="316">Git, GitHub, Gradle, Figma, Blender</text>
+  <text class="line-no" x="293" y="329">11</text>
+  <text class="plain" x="320" y="329">· </text>
+  <text class="label" x="337" y="329">Tools:</text>
+  <text class="plain" x="389" y="329">............</text>
+  <text class="value" x="507" y="329">Git, GitHub, Gradle, Figma, Blender</text>
 
-<text class="line-number" x="41" y="341">12</text>
-<text class="text" x="68" y="341">· </text>
-<text class="label" x="86" y="341">Systems:</text>
-<text class="text" x="164" y="341">..................</text>
-<text class="value" x="345" y="341">Arduino, Raspberry Pi, </text>
-<text class="reference" x="560" y="341">[OS]</text>
+  <text class="line-no" x="293" y="352">12</text>
+  <text class="plain" x="320" y="352">· </text>
+  <text class="label" x="337" y="352">Systems:</text>
+  <text class="plain" x="405" y="352">..................</text>
+  <text class="value" x="575" y="352">Arduino, Raspberry Pi, </text>
+  <text class="ref" x="770" y="352">[OS]</text>
 
-<text class="line-number" x="41" y="366">13</text>
+  <text class="line-no" x="293" y="375">13</text>
 
-<text class="line-number" x="41" y="391">14</text>
-<text class="section" x="68" y="391">- Languages</text>
-<line class="separator" x1="185" y1="385" x2="600" y2="385" />
+  <text class="line-no" x="293" y="398">14</text>
+  <text class="section" x="320" y="398">- Languages</text>
+  <line class="rule" x1="428" y1="392" x2="814" y2="392"/>
 
-<text class="line-number" x="41" y="416">15</text>
-<text class="text" x="68" y="416">· </text>
-<text class="label" x="86" y="416">Languages.Real:</text>
-<text class="text" x="230" y="416">................</text>
-<text class="value" x="393" y="416">English, French, Dutch</text>
+  <text class="line-no" x="293" y="421">15</text>
+  <text class="plain" x="320" y="421">· </text>
+  <text class="label" x="337" y="421">Languages.Real:</text>
+  <text class="plain" x="473" y="421">..............</text>
+  <text class="value" x="614" y="421">English, French, Dutch</text>
 
-<text class="line-number" x="41" y="441">16</text>
-<text class="text" x="68" y="441">· </text>
-<text class="label" x="86" y="441">Languages.Programming:</text>
-<text class="text" x="296" y="441">........</text>
-<text class="value" x="385" y="441">JavaScript, TypeScript,</text>
+  <text class="line-no" x="293" y="444">16</text>
+  <text class="plain" x="320" y="444">· </text>
+  <text class="label" x="337" y="444">Languages.Programming:</text>
+  <text class="plain" x="525" y="444">......</text>
+  <text class="value" x="586" y="444">JavaScript, TypeScript,</text>
 
-<text class="line-number" x="41" y="466">17</text>
-<text class="text" x="68" y="466">....................</text>
-<text class="value" x="262" y="466">Java, Kotlin, Python, C++, Dart, Lua</text>
+  <text class="line-no" x="293" y="467">17</text>
+  <text class="plain" x="320" y="467">...................</text>
+  <text class="value" x="495" y="467">Java, Kotlin, Python, C++, Dart, Lua</text>
 
-<text class="line-number" x="41" y="491">18</text>
-<text class="text" x="68" y="491">· </text>
-<text class="label" x="86" y="491">Languages.Web:</text>
-<text class="text" x="227" y="491">.......................</text>
-<text class="value" x="458" y="491">HTML, CSS, JSON</text>
+  <text class="line-no" x="293" y="490">18</text>
+  <text class="plain" x="320" y="490">· </text>
+  <text class="label" x="337" y="490">Languages.Web:</text>
+  <text class="plain" x="470" y="490">....................</text>
+  <text class="value" x="680" y="490">HTML, CSS, JSON</text>
 
-<text class="line-number" x="41" y="516">19</text>
-<text class="text" x="68" y="516">· </text>
-<text class="label" x="86" y="516">Frameworks:</text>
-<text class="text" x="192" y="516">...................</text>
-<text class="value" x="383" y="516">React, Node.js, Flutter</text>
+  <text class="line-no" x="293" y="513">19</text>
+  <text class="plain" x="320" y="513">· </text>
+  <text class="label" x="337" y="513">Frameworks:</text>
+  <text class="plain" x="438" y="513">...................</text>
+  <text class="value" x="614" y="513">React, Node.js, Flutter</text>
 
-<text class="line-number" x="41" y="541">20</text>
-<text class="text" x="68" y="541">· </text>
-<text class="label" x="86" y="541">Machine Learning:</text>
-<text class="text" x="247" y="541">.............................</text>
-<text class="value" x="533" y="541">PyTorch</text>
+  <text class="line-no" x="293" y="536">20</text>
+  <text class="plain" x="320" y="536">· </text>
+  <text class="label" x="337" y="536">Machine Learning:</text>
+  <text class="plain" x="487" y="536">.......................</text>
+  <text class="value" x="748" y="536">PyTorch</text>
 
-<text class="line-number" x="41" y="566">21</text>
+  <text class="line-no" x="293" y="559">21</text>
 
-<text class="line-number" x="41" y="591">22</text>
-<text class="section" x="68" y="591">- Contact</text>
-<line class="separator" x1="163" y1="585" x2="600" y2="585" />
+  <text class="line-no" x="293" y="582">22</text>
+  <text class="section" x="320" y="582">- Contact</text>
+  <line class="rule" x1="397" y1="576" x2="814" y2="576"/>
 
-<text class="line-number" x="41" y="616">23</text>
-<text class="text" x="68" y="616">· </text>
-<text class="label" x="86" y="616">GitHub:</text>
-<text class="text" x="158" y="616">......................</text>
-<text class="value" x="378" y="616">github.com/huaux-raphael</text>
+  <text class="line-no" x="293" y="605">23</text>
+  <text class="plain" x="320" y="605">· </text>
+  <text class="label" x="337" y="605">GitHub:</text>
+  <text class="plain" x="398" y="605">.....................</text>
+  <text class="value" x="608" y="605">github.com/huaux-raphael</text>
 
-<text class="line-number" x="41" y="641">24</text>
-<text class="text" x="68" y="641">· </text>
-<text class="label" x="86" y="641">Website:</text>
-<text class="text" x="167" y="641">................................</text>
-<text class="value" x="480" y="641">[In Progress]</text>
+  <text class="line-no" x="293" y="628">24</text>
+  <text class="plain" x="320" y="628">· </text>
+  <text class="label" x="337" y="628">Website:</text>
+  <text class="plain" x="406" y="628">.............................</text>
+  <text class="value" x="703" y="628">[In Progress]</text>
 
-<text class="line-number" x="41" y="666">25</text>
-<text class="text" x="68" y="666">· </text>
-<text class="label" x="86" y="666">Email:</text>
-<text class="text" x="149" y="666">.........................</text>
-<text class="value" x="394" y="666">huauxraphael@gmail.com</text>
+  <text class="line-no" x="293" y="651">25</text>
+  <text class="plain" x="320" y="651">· </text>
+  <text class="label" x="337" y="651">Email:</text>
+  <text class="plain" x="389" y="651">........................</text>
+  <text class="value" x="621" y="651">huauxraphael@gmail.com</text>
 
-<text class="line-number" x="41" y="691">26</text>
-<text class="text" x="68" y="691">· </text>
-<text class="label" x="86" y="691">Discord:</text>
-<text class="text" x="167" y="691">................................</text>
-<text class="value" x="480" y="691">[In Progress]</text>
+  <text class="line-no" x="293" y="674">26</text>
+  <text class="plain" x="320" y="674">· </text>
+  <text class="label" x="337" y="674">Discord:</text>
+  <text class="plain" x="406" y="674">...........................</text>
+  <text class="value" x="703" y="674">[In Progress]</text>
 
-<text class="line-number" x="41" y="716">27</text>
-<text class="text" x="68" y="716">· </text>
-<text class="label" x="86" y="716">Dev.to:</text>
-<text class="text" x="158" y="716">..........................</text>
-<text class="value" x="415" y="716">dev.to/raphael_huaux</text>
+  <text class="line-no" x="293" y="697">27</text>
+  <text class="plain" x="320" y="697">· </text>
+  <text class="label" x="337" y="697">Dev.to:</text>
+  <text class="plain" x="398" y="697">......................</text>
+  <text class="value" x="640" y="697">dev.to/raphael_huaux</text>
 
-<text class="line-number" x="41" y="741">28</text>
-<text class="text" x="68" y="741">· </text>
-<text class="label" x="86" y="741">Ko-Fi:</text>
-<text class="text" x="149" y="741">.........................</text>
-<text class="value" x="397" y="741">ko-fi.com/raphaelhuaux</text>
+  <text class="line-no" x="293" y="720">28</text>
+  <text class="plain" x="320" y="720">· </text>
+  <text class="label" x="337" y="720">Ko-Fi:</text>
+  <text class="plain" x="389" y="720">.......................</text>
+  <text class="value" x="621" y="720">ko-fi.com/raphaelhuaux</text>
 
-<text class="line-number" x="41" y="766">29</text>
+  <text class="line-no" x="293" y="743">29</text>
 
-<text class="line-number" x="41" y="791">30</text>
-<text class="section" x="68" y="791">- GitHub Stats</text>
-<line class="separator" x1="205" y1="785" x2="600" y2="785" />
+  <text class="line-no" x="293" y="766">30</text>
+  <text class="section" x="320" y="766">- GitHub Stats</text>
+  <line class="rule" x1="440" y1="760" x2="814" y2="760"/>
 
-<text class="line-number" x="41" y="816">31</text>
-<text class="text" x="68" y="816">
-    · Repositories: ....... 
-</text>
+  <text class="line-no" x="293" y="789">31</text>
+  <text class="plain" x="320" y="789">· Repositories: ......</text>
+  <text id="repositories" class="ref" x="525" y="789">[AUTO]</text>
+  <text class="plain" x="585" y="789">| Stars: .........</text>
+  <text id="stars" class="ref" x="762" y="789">[AUTO]</text>
 
-<text
-    id="repositories"
-    class="reference"
-    x="290"
-    y="816"
->[AUTO]</text>
-
-<text class="text" x="355" y="816"> | Stars: .......... </text>
-
-<text
-    id="stars"
-    class="reference"
-    x="545"
-    y="816"
->[AUTO]</text>
-<text class="line-number" x="41" y="841">32</text>
-
-<text class="text" x="68" y="841">
-    · Commits: ............
-</text>
-
-<text
-    id="commits"
-    class="reference"
-    x="290"
-    y="841"
->[AUTO]</text>
-
-<text class="text" x="355" y="841">
-    | Followers: ......
-</text>
-
-<text
-    id="followers"
-    class="reference"
-    x="545"
-    y="841"
->[AUTO]</text>
+  <text class="line-no" x="293" y="812">32</text>
+  <text class="plain" x="320" y="812">· Commits: ............</text>
+  <text id="commits" class="ref" x="525" y="812">[AUTO]</text>
+  <text class="plain" x="585" y="812">| Followers: .....</text>
+  <text id="followers" class="ref" x="762" y="812">[AUTO]</text>
 </svg>
