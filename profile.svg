@@ -96,47 +96,47 @@
 
 <text class="line-number" x="41" y="66">1</text>
 <text class="text" x="68" y="66">huaux-raphael</text>
-<line class="separator" x1="205" y1="60" x2="742" y2="60" />
+<line class="separator" x1="205" y1="60" x2="600" y2="60" />
 
 <text class="line-number" x="41" y="91">2</text>
 <text class="text" x="68" y="91">· </text>
 <text class="label" x="86" y="91">Role:</text>
 <text class="text" x="140" y="91">...............................</text>
-<text class="value" x="455" y="91">Student Developer</text>
+<text class="value" x="440" y="91">Student Developer</text>
 
 <text class="line-number" x="41" y="116">3</text>
 <text class="text" x="68" y="116">· </text>
 <text class="label" x="86" y="116">Location:</text>
-<text class="text" x="173" y="116">............................</text>
-<text class="value" x="536" y="116">Belgium</text>
+<text class="text" x="173" y="116">.....................................</text>
+<text class="value" x="532" y="116">Belgium</text>
 
 <text class="line-number" x="41" y="141">4</text>
 <text class="text" x="68" y="141">· </text>
 <text class="label" x="86" y="141">Hobbies:</text>
 <text class="text" x="164" y="141">............</text>
-<text class="value" x="300" y="141">Gaming, Anime, Learning, Building</text>
+<text class="value" x="289" y="141">Gaming, Anime, Learning, Building</text>
 
 <text class="line-number" x="41" y="166">5</text>
 <text class="text" x="68" y="166">· </text>
 <text class="label" x="86" y="166">Interests:</text>
 <text class="text" x="183" y="166">.........</text>
-<text class="value" x="290" y="166">Software, Hardware, Cybersecurity,</text>
+<text class="value" x="282" y="166">Software, Hardware, Cybersecurity,</text>
 
 <text class="line-number" x="41" y="191">6</text>
-<text class="text" x="68" y="191">.............................</text>
-<text class="value" x="345" y="191">Networking, Machine Learning</text>
+<text class="text" x="68" y="191">............................</text>
+<text class="value" x="336" y="191">Networking, Machine Learning</text>
 
 <text class="line-number" x="41" y="216">7</text>
 
 <text class="line-number" x="41" y="241">8</text>
 <text class="section" x="68" y="241">- Tools</text>
-<line class="separator" x1="142" y1="235" x2="742" y2="235" />
+<line class="separator" x1="142" y1="235" x2="600" y2="235" />
 
 <text class="line-number" x="41" y="266">9</text>
 <text class="text" x="68" y="266">· </text>
 <text class="label" x="86" y="266">OS:</text>
 <text class="text" x="122" y="266">.................................</text>
-<text class="value" x="455" y="266">Linux, Windows 11</text>
+<text class="value" x="442" y="266">Linux, Windows 11</text>
 
 <text class="line-number" x="41" y="291">10</text>
 <text class="text" x="68" y="291">· </text>
@@ -148,20 +148,20 @@
 <text class="text" x="68" y="316">· </text>
 <text class="label" x="86" y="316">Tools:</text>
 <text class="text" x="149" y="316">............</text>
-<text class="value" x="270" y="316">Git, GitHub, Gradle, Figma, Blender</text>
+<text class="value" x="272" y="316">Git, GitHub, Gradle, Figma, Blender</text>
 
 <text class="line-number" x="41" y="341">12</text>
 <text class="text" x="68" y="341">· </text>
 <text class="label" x="86" y="341">Systems:</text>
 <text class="text" x="164" y="341">..................</text>
 <text class="value" x="345" y="341">Arduino, Raspberry Pi, </text>
-<text class="reference" x="580" y="341">[OS]</text>
+<text class="reference" x="560" y="341">[OS]</text>
 
 <text class="line-number" x="41" y="366">13</text>
 
 <text class="line-number" x="41" y="391">14</text>
 <text class="section" x="68" y="391">- Languages</text>
-<line class="separator" x1="185" y1="385" x2="742" y2="385" />
+<line class="separator" x1="185" y1="385" x2="600" y2="385" />
 
 <text class="line-number" x="41" y="416">15</text>
 <text class="text" x="68" y="416">· </text>
@@ -172,78 +172,78 @@
 <text class="line-number" x="41" y="441">16</text>
 <text class="text" x="68" y="441">· </text>
 <text class="label" x="86" y="441">Languages.Programming:</text>
-<text class="text" x="287" y="441">........</text>
-<text class="value" x="370" y="441">JavaScript, TypeScript,</text>
+<text class="text" x="296" y="441">........</text>
+<text class="value" x="385" y="441">JavaScript, TypeScript,</text>
 
 <text class="line-number" x="41" y="466">17</text>
 <text class="text" x="68" y="466">....................</text>
-<text class="value" x="260" y="466">Java, Kotlin, Python, C++, Dart, Lua</text>
+<text class="value" x="262" y="466">Java, Kotlin, Python, C++, Dart, Lua</text>
 
 <text class="line-number" x="41" y="491">18</text>
 <text class="text" x="68" y="491">· </text>
 <text class="label" x="86" y="491">Languages.Web:</text>
-<text class="text" x="230" y="491">.......................</text>
-<text class="value" x="455" y="491">HTML, CSS, JSON</text>
+<text class="text" x="227" y="491">.......................</text>
+<text class="value" x="458" y="491">HTML, CSS, JSON</text>
 
 <text class="line-number" x="41" y="516">19</text>
 <text class="text" x="68" y="516">· </text>
 <text class="label" x="86" y="516">Frameworks:</text>
-<text class="text" x="191" y="516">...................</text>
-<text class="value" x="375" y="516">React, Node.js, Flutter</text>
+<text class="text" x="192" y="516">...................</text>
+<text class="value" x="383" y="516">React, Node.js, Flutter</text>
 
 <text class="line-number" x="41" y="541">20</text>
 <text class="text" x="68" y="541">· </text>
 <text class="label" x="86" y="541">Machine Learning:</text>
-<text class="text" x="239" y="541">........................</text>
-<text class="value" x="505" y="541">PyTorch</text>
+<text class="text" x="247" y="541">.............................</text>
+<text class="value" x="533" y="541">PyTorch</text>
 
 <text class="line-number" x="41" y="566">21</text>
 
 <text class="line-number" x="41" y="591">22</text>
 <text class="section" x="68" y="591">- Contact</text>
-<line class="separator" x1="163" y1="585" x2="742" y2="585" />
+<line class="separator" x1="163" y1="585" x2="600" y2="585" />
 
 <text class="line-number" x="41" y="616">23</text>
 <text class="text" x="68" y="616">· </text>
 <text class="label" x="86" y="616">GitHub:</text>
 <text class="text" x="158" y="616">......................</text>
-<text class="value" x="380" y="616">github.com/huaux-raphael</text>
+<text class="value" x="378" y="616">github.com/huaux-raphael</text>
 
 <text class="line-number" x="41" y="641">24</text>
 <text class="text" x="68" y="641">· </text>
 <text class="label" x="86" y="641">Website:</text>
 <text class="text" x="167" y="641">................................</text>
-<text class="value" x="505" y="641">[In Progress]</text>
+<text class="value" x="480" y="641">[In Progress]</text>
 
 <text class="line-number" x="41" y="666">25</text>
 <text class="text" x="68" y="666">· </text>
 <text class="label" x="86" y="666">Email:</text>
 <text class="text" x="149" y="666">.........................</text>
-<text class="value" x="410" y="666">huauxraphael@gmail.com</text>
+<text class="value" x="394" y="666">huauxraphael@gmail.com</text>
 
 <text class="line-number" x="41" y="691">26</text>
 <text class="text" x="68" y="691">· </text>
 <text class="label" x="86" y="691">Discord:</text>
 <text class="text" x="167" y="691">................................</text>
-<text class="value" x="505" y="691">[In Progress]</text>
+<text class="value" x="480" y="691">[In Progress]</text>
 
 <text class="line-number" x="41" y="716">27</text>
 <text class="text" x="68" y="716">· </text>
 <text class="label" x="86" y="716">Dev.to:</text>
 <text class="text" x="158" y="716">..........................</text>
-<text class="value" x="420" y="716">dev.to/raphael_huaux</text>
+<text class="value" x="415" y="716">dev.to/raphael_huaux</text>
 
 <text class="line-number" x="41" y="741">28</text>
 <text class="text" x="68" y="741">· </text>
 <text class="label" x="86" y="741">Ko-Fi:</text>
 <text class="text" x="149" y="741">.........................</text>
-<text class="value" x="410" y="741">ko-fi.com/raphaelhuaux</text>
+<text class="value" x="397" y="741">ko-fi.com/raphaelhuaux</text>
 
 <text class="line-number" x="41" y="766">29</text>
 
 <text class="line-number" x="41" y="791">30</text>
 <text class="section" x="68" y="791">- GitHub Stats</text>
-<line class="separator" x1="205" y1="785" x2="742" y2="785" />
+<line class="separator" x1="205" y1="785" x2="600" y2="785" />
 
 <text class="line-number" x="41" y="816">31</text>
 <text class="text" x="68" y="816">
@@ -253,18 +253,18 @@
 <text
     id="repositories"
     class="reference"
-    x="260"
+    x="290"
     y="816"
->[AUTO_REPOS]</text>
+>[AUTO]</text>
 
 <text class="text" x="355" y="816"> | Stars: .......... </text>
 
 <text
     id="stars"
     class="reference"
-    x="555"
+    x="545"
     y="816"
->[AUTO_STARS]</text>
+>[AUTO]</text>
 <text class="line-number" x="41" y="841">32</text>
 
 <text class="text" x="68" y="841">
@@ -274,9 +274,9 @@
 <text
     id="commits"
     class="reference"
-    x="260"
+    x="290"
     y="841"
->[AUTO_COMMITS]</text>
+>[AUTO]</text>
 
 <text class="text" x="355" y="841">
     | Followers: ......
@@ -285,7 +285,7 @@
 <text
     id="followers"
     class="reference"
-    x="555"
+    x="545"
     y="841"
->[AUTO_FOLLOWERS]</text>
+>[AUTO]</text>
 </svg>
