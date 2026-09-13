@@ -335,13 +335,13 @@
 
   <text class="line-no" x="293" y="789">31</text>
   <text class="plain" x="320" y="789">· Repositories: .........</text>
-  <text id="repositories" class="ref" x="525" y="789">[AUTO]</text>
+  <text id="repositories" class="ref" x="525" y="789">2</text>
   <text class="plain" x="585" y="789">| Stars: ............</text>
-  <text id="stars" class="ref" x="762" y="789">[AUTO]</text>
+  <text id="stars" class="ref" x="762" y="789">0</text>
 
   <text class="line-no" x="293" y="812">32</text>
   <text class="plain" x="320" y="812">· Commits: ..............</text>
-  <text id="commits" class="ref" x="525" y="812">[AUTO]</text>
+  <text id="commits" class="ref" x="525" y="812">65</text>
   <text class="plain" x="585" y="812">| Followers: ........</text>
-  <text id="followers" class="ref" x="762" y="812">[AUTO]</text>
+  <text id="followers" class="ref" x="762" y="812">2</text>
 </svg>
